@@ -1,12 +1,21 @@
-const container = document.querySelector('.container');
+const input = document.querySelector('.loginInput');
+const button = document.querySelector('.loginButton');
+const form = document.querySelector('.loginForm');
 
-const characters = []
-
-const createElement = (tag, className) => {
-    const element = document.createElement(tag);
-    element.className = className;
-    return element;
+const validateInput = ({ target }) => {
+  if (target.value.length > 2){
+    button.removeAttribute('disabled')
+    return
   }
 
-  let firstCard = ''
-  let secondCard = ''
+    button.setAttribute('disabled', '');
+  };
+
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    
+    localStorage.setItem('player', input.value);
+    window.location = 'pages/game.html'
+  }
+  input.addEventListener('input', validateInput);
+  form.addEventListener('submit', handleSubmit);

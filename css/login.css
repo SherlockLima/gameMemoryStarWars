@@ -1,0 +1,39 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.loginForm{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+.loginHeader{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.loginHeader img{
+    width: 200px;
+}
+
+.loginHeader h1{
+    font-size: 1.5em;
+    color: #333;
+}
+
+.loginInput{
+    border: 2px #333 solid;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 270px;
+    margin-bottom: 15px;
+    font-size: 1em;
+
+}

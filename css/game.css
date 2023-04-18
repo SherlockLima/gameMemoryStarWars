@@ -56,7 +56,6 @@ img{display: block;
  }
 
  .front{
-    background-color: red;
      background-image: url(../images/characters/bo-katan.png);
     transform: rotateY(180deg);
  }
